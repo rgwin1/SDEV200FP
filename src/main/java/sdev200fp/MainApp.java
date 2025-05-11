@@ -1,3 +1,10 @@
+package sdev200fp;
+
+import sdev200fp.ui.HomePage;
+import sdev200fp.ui.FamilyPage;
+import sdev200fp.ui.TasksPage;
+import sdev200fp.ui.CalendarPage;
+
 //import required javafx classes
 import javafx.application.Application;
 import javafx.scene.Scene;
