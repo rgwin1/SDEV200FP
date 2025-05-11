@@ -1,0 +1,57 @@
+Family Tracker - User Manual
+=============================
+
+Overview
+--------
+The Family Tracker application is a desktop-based JavaFX program designed to help users manage detailed information about family members, tasks, and general scheduling.
+
+System Requirements
+-------------------
+- Java 23 or later
+- JavaFX SDK 23 (installed via Maven)
+- MySQL Server (via XAMPP or similar)
+- NetBeans IDE (or any Maven-compatible IDE)
+
+Launching the Application
+-------------------------
+1. Open the project in NetBeans.
+2. Ensure your MySQL server is running and the `sdev200fp` database is set up.
+3. Run the project using NetBeans or use:
+   ```
+   mvn javafx:run
+   ```
+
+Using the Application
+---------------------
+
+Home Page
+- After adding a family member, this page displays a welcome message.
+
+Add a Family Member
+1. Click "Add Family Member" from the Family Page.
+2. Enter required information: First Name, Last Name, Date of Birth.
+3. Optionally enter: Middle Name, Email, Medical Info, Notes.
+4. Click "Select Photo" to upload a profile image.
+5. Click "Submit" to save the member to the database.
+
+Viewing Family Members
+- The Family Page lists all members currently in the database.
+- Each member shows a photo (if added), full name, and date of birth.
+
+Tasks Page
+- Enter a task description and select a due date.
+- Click "Add Task" to add it to the task list (in-memory only).
+
+Calendar Page
+- Displays a full interactive calendar using JavaFX's DatePicker.
+- Select any date to interact (visual only — no events yet linked).
+
+Error Handling
+--------------
+- Invalid or missing input fields will trigger alerts (e.g., empty first name, invalid email).
+- Database errors (e.g., connection issues) are caught and printed to the console.
+
+Support
+-------
+For further setup help, refer to the README.txt included in the project root.
+
